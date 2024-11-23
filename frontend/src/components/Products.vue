@@ -26,7 +26,7 @@
 <script>
 import axios from 'axios';
 
-const endpoint = 'http://backend:8000';
+const endpoint = '/api';
 
 export default {
   name: 'ProductsList',
@@ -36,7 +36,7 @@ export default {
     }
   },
   created() {
-    axios.get(endpoint + '/api')
+    axios.get(`${endpoint}/`)
       .then(response => {
         this.products = response.data.data
       })
