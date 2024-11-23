@@ -4,8 +4,8 @@
     <table class="table">
       <thead>
         <tr>
-          <th style="text-align: right">product</th>
-          <th>price</th>
+          <th style="text-align: right">product!</th>
+          <th>price!</th>
         </tr>
       </thead>
       <tbody>
