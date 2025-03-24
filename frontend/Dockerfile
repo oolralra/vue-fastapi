@@ -19,6 +19,6 @@ FROM nginx:alpine
 
 COPY --from=build /app/dist /usr/share/nginx/html
 # build라는 환경의 /app/dist, 즉 정적파일을 nginx의 웹루트디렉토리로 복사
-COPY --from=build /app/default.conf /app/default.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/default.conf /etc/nginx/conf.d/default.conf
 
 #nginx는 알아서 실행된다. CMD 무필요
